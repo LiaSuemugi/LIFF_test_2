@@ -1,17 +1,14 @@
 window.onload = function () {
-    window.alert("loaded")
-    try{
-        recallInfo();
-    }catch(err){
-        window.alert('cookie recall failed' + err);
-    }
+    recallInfo();
     try {
         const myLiffId = "1656883857-9gzWWAmR";
         initializeLiff(myLiffId);
     }
     catch (err) {
-        window.alert('init failed' + err);
+        console.log('init failed' + err);
     }
+    others('faculty');
+    others('grade');
 }
 
 function initializeLiff(myLiffId) {
@@ -19,7 +16,7 @@ function initializeLiff(myLiffId) {
         liffId: myLiffId
     }).then(promise => {
     }).catch((err) => {
-        window.alert('LIFF Initialization failed ', err);
+        console.log('LIFF Initialization failed ', err);
     });
 }
 
@@ -30,7 +27,7 @@ function sendText(text) {
     }]).then(function () {
         liff.closeWindow();
     }).catch(function (error) {
-        window.alert('Failed to send message ' + error);
+        console.log('Failed to send message ' + error);
     });
 }
 
@@ -52,6 +49,3 @@ function send(select) {
     }
     return false;
 }
-
-const params = (new URL(document.location)).searchParams;
-const key = params.get('key');
