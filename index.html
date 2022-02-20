@@ -12,7 +12,7 @@
 
 <body>
     <form class="was-validated mx-auto w-75">
-        <div class="row mb-3">
+        <div class="row mb-3 mt-3">
             <label for="input_name" class="col-sm-2 col-form-label">お名前</label>
             <div class="col-sm-10">
                 <textarea class="form-control" id="input_name" rows="1" placeholder="お名前をご入力ください" required></textarea>
@@ -37,8 +37,11 @@
                     <option value="工学部">工学部</option>
                     <option value="その他">その他</option>
                 </select>
-                <textarea class="form-control" id="others_faculty" rows="1" placeholder="ご所属をご入力ください" required
+                <div class="ms-4 mt-2">
+                    <textarea class="form-control" id="others_faculty" rows="1" placeholder="ご所属をご入力ください" required
                     hidden></textarea>
+                </div>
+                
             </div>
         </div>
 
@@ -53,8 +56,11 @@
                     <option value="学部4年生">学部4年生</option>
                     <option value="その他">その他</option>
                 </select>
-                <textarea class="form-control" id="others_grade" rows="1" placeholder="学年をご入力ください" required
+                <div class="ms-4 mt-2">
+                    <textarea class="form-control" id="others_grade" rows="1" placeholder="学年をご入力ください" required
                     hidden></textarea>
+                </div>
+                
             </div>
         </div>
 
@@ -74,21 +80,23 @@
                     <option value="9日目">9日目</option>
                     <option value="10日目">10日目</option>
                 </select>
-                <p>【販売日程】<br>xx/xx(x)～xx/xx(x)
-                    土日除く<br>16:30-19:00<br>【お受け取り方法】<br>豊中キャンパス阪大坂の中腹にあります万福寺さん前の露店にて直接受け渡しさせていただきます。</p>
+                <div class="ms-4 mt-2">
+                    <p>【販売日程】<br>xx/xx(x)～xx/xx(x) 土日除く<br>16:30-19:00<br>【お受け取り方法】<br>豊中キャンパス阪大坂の中腹にあります万福寺さん前の露店にて直接受け渡しさせていただきます。</p>
+                </div>
+                
             </div>
         </div>
-        <div class="form-check">
+        <div class="form-check mb-3">
             <input class="form-check-input" type="checkbox" value="" id="cookie_check" checked>
             <label class="form-check-label" for="cookie_check">
                 cookieを利用して入力情報をブラウザに保存する（2週間で消去されます）
             </label>
           </div>
-        <div class="d-grid gap-2 d-md-block">
+        <div class="d-grid gap-2 d-md-block mb-5">
             <input type="submit" class="btn btn-primary" value="送信" onclick="send('send');saveInfo()">
             <input type="submit" class="btn btn-secondary" value="キャンセル" onclick="send('cancel');saveInfo()">
-            <input type="button" class = "btn btn-primary" value="save cookie" onclick="saveInfo()">
-            <input type="button" class="btn btn-secondary" value="recall cookie" onclick="recallInfo()">
+            <!-- <input type="button" class = "btn btn-primary" value="save cookie" onclick="saveInfo()"> -->
+            <!-- <input type="button" class="btn btn-secondary" value="recall cookie" onclick="recallInfo()"> -->
         </div>
 
     </form>
