@@ -67,10 +67,17 @@ function saveInfo(){
 }
 
 function recallInfo(){
-    input_name.value = getCookie("name")||"";
-    select_faculty.value = getCookie("faculty")||"";
-    others_faculty.value = getCookie("others_faculty")||"";
-    select_grade.value = getCookie("grade")||"";
-    others_grade.value = getCookie("others_grade")||"";
-    select_date.value = getCookie("date")||"";
+    // input_name.value = getCookie("name")||"";
+    // select_faculty.value = getCookie("faculty")||"";
+    // others_faculty.value = getCookie("others_faculty")||"";
+    // select_grade.value = getCookie("grade")||"";
+    // others_grade.value = getCookie("others_grade")||"";
+    // select_date.value = getCookie("date")||"";
+
+    input_name.value = getCookie("name");
+    select_faculty.value = getCookie("faculty");
+    others_faculty.value = getCookie("others_faculty");
+    select_grade.value = getCookie("grade");
+    others_grade.value = getCookie("others_grade");
+    select_date.value = getCookie("date");
 }
