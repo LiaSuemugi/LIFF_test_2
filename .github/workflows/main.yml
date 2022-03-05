@@ -14,4 +14,4 @@ jobs:
           GA_SRC: ${{secrets.GA_SRC}}
           LIFF_ID: ${{secrets.LIFF_ID}}
         run: |
-　　　　　##access to $SECRET_SETTING if this script is bash
+　　　　　##access to $LIFF_ID if this script is bash
