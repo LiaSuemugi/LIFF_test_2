@@ -1,7 +1,7 @@
 window.onload = function () {
     recallInfo();
     try {
-        const myLiffId = secrets.LIFF_ID;
+        const myLiffId = process.env.LIFF_ID;
         initializeLiff(myLiffId);
     }
     catch (err) {
