@@ -1,9 +1,9 @@
-name: Hello
+name: Secret
 on: push
 jobs:
   hello:
     runs-on: ubuntu-latest
-    name: Hello
+    name: Secret
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -13,5 +13,4 @@ jobs:
           GA_CONFIG_2: ${{secrets.GA_CONFIG_2}}
           GA_SRC: ${{secrets.GA_SRC}}
           LIFF_ID: ${{secrets.LIFF_ID}}
-        run: |
-　　　　　##access to $LIFF_ID if this script is bash
+        uses: ./.github/actions/
