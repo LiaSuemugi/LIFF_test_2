@@ -1,7 +1,7 @@
 window.onload = function () {
     recallInfo();
     try {
-        const myLiffId = "1656883857-9gzWWAmR";
+        const myLiffId = "1656946891-2jZp5Y1k";
         initializeLiff(myLiffId);
     }
     catch (err) {
