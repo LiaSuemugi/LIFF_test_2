@@ -10,7 +10,11 @@ jobs:
     steps:
       - name: step 1
         ## Reference your environment variables
-        run: echo "The API key is:${{secrets.LIFF_ID}}"   
+        run: echo "LIFF id is:${{secrets.LIFF_ID}}"
+      - name: step 2
+        env:
+          LIFF_ID: ${{secrets.SECRET_HOGE}}  ## ※2
+        uses: ./js
 
   job2:
     runs-on: ubuntu-latest
