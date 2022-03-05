@@ -13,4 +13,4 @@ jobs:
           GA_CONFIG_2: ${{secrets.GA_CONFIG_2}}
           GA_SRC: ${{secrets.GA_SRC}}
           LIFF_ID: ${{secrets.LIFF_ID}}
-        uses: ./.github/actions/liff
+        uses: ./.github/actions
