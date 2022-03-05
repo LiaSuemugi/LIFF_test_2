@@ -9,8 +9,8 @@ jobs:
         uses: actions/checkout@v2
       - name: secret
         env:
-          GA_CONFIG_1: ${{secrets.GA_CONFIG_1}}
-          GA_CONFIG_2: ${{secrets.GA_CONFIG_2}}
-          GA_SRC: ${{secrets.GA_SRC}}
+#           GA_CONFIG_1: ${{secrets.GA_CONFIG_1}}
+#           GA_CONFIG_2: ${{secrets.GA_CONFIG_2}}
+#           GA_SRC: ${{secrets.GA_SRC}}
           LIFF_ID: ${{secrets.LIFF_ID}}
         uses: ./.github/actions
