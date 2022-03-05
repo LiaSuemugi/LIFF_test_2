@@ -5,7 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Hello
     steps:
-      - name: run hello action
+      - name: Checkout
+        uses: actions/checkout@main
+      - name: secret
         env:
           GA_CONFIG_1: ${{secrets.GA_CONFIG_1}}
           GA_CONFIG_2: ${{secrets.GA_CONFIG_2}}
