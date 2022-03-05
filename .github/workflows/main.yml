@@ -13,7 +13,7 @@ jobs:
         run: echo "LIFF id is:${{secrets.LIFF_ID}}"
       - name: step 2
         env:
-          LIFF_ID: ${{secrets.SECRET_HOGE}}  ## ※2
+          LIFF_ID: ${{secrets.LIFF_ID}}
         uses: ./js
 
   job2:
