@@ -14,7 +14,7 @@ jobs:
       - name: step 2
         env:
           LIFF_ID: ${{secrets.LIFF_ID}}
-        uses: ./js
+        uses: ./js@main
 
   job2:
     runs-on: ubuntu-latest
